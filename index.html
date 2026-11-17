@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>MOZ — entra na zona</title>
+<meta name="description" content="MOZ, pastilha elástica funcional com cafeína natural, L-teanina e vitaminas B. Sem açúcar.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231B1A17'/%3E%3Ccircle cx='50' cy='50' r='26' fill='none' stroke='%23F15419' stroke-width='14'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#1B1A17}
+a{color:#77E7FE}a:hover{color:#F4F1EC}
+.moz-nav a{color:#D2CDC4;text-decoration:none;transition:color .2s}
+.moz-nav a:hover{color:#F4F1EC}
+.moz-ring{transform-box:fill-box;transform-origin:center;animation:mozHum 2.6s ease-in-out infinite}
+.moz-ring.r2{animation-delay:.25s}.moz-ring.r3{animation-delay:.5s}.moz-ring.r4{animation-delay:.75s}.moz-ring.r5{animation-delay:1s}
+@keyframes mozHum{0%,100%{transform:scale(1) translate(0,0)}20%{transform:scale(1.012) translate(.6px,-.4px)}40%{transform:scale(.994) translate(-.5px,.5px)}60%{transform:scale(1.018) translate(.4px,.3px)}80%{transform:scale(.998) translate(-.3px,-.5px)}}
+.moz-spin{transform-box:fill-box;transform-origin:center;animation:mozSpin 40s linear infinite}
+@keyframes mozSpin{to{transform:rotate(360deg)}}
+.moz-wave{animation:mozWave 7s ease-in-out infinite}
+.moz-wave.w2{animation-delay:-1.4s}.moz-wave.w3{animation-delay:-2.8s}.moz-wave.w4{animation-delay:-4.2s}.moz-wave.w5{animation-delay:-5.6s}
+@keyframes mozWave{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+.moz-float{animation:mozFloat 7s ease-in-out infinite}
+.moz-float.f2{animation-duration:8.5s;animation-delay:-2s}.moz-float.f3{animation-duration:6s;animation-delay:-3.5s}.moz-float.f4{animation-duration:9s;animation-delay:-1s}
+@keyframes mozFloat{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-18px) rotate(4deg)}}
+.moz-caret{display:inline-block;width:2px;height:1em;margin-left:2px;vertical-align:-2px;background:#77E7FE;animation:mozBlink 1s steps(1) infinite}
+@keyframes mozBlink{50%{opacity:0}}
+.moz-cta{box-shadow:0 0 22px rgba(119,231,254,.28);transition:box-shadow .25s}
+.moz-cta:hover{box-shadow:0 0 36px rgba(119,231,254,.55)}
+.moz-input{transition:border-color .2s,box-shadow .2s}
+.moz-input:focus{outline:none;border-color:rgba(119,231,254,.7)!important;box-shadow:0 0 0 3px rgba(119,231,254,.15),0 0 22px rgba(119,231,254,.25)}
+@media (max-width: 640px){
+h1[style*="font-size: 96px"]{font-size:44px!important}
+[style*="font-size: 88px"]{font-size:44px!important}
+[style*="font-size: 56px"],[style*="font-size: 52px"],[style*="font-size: 48px"],[style*="font-size: 44px"]{font-size:31px!important}
+[style*="font-size: 32px"]{font-size:24px!important}
+[style*="font-size: 26px"]{font-size:22px!important}
+[style*="font-size: 21px"],[style*="font-size: 20px"],[style*="font-size: 19px"],[style*="font-size: 18px"]{font-size:16px!important}
+section[style*="padding: 112px 24px"],section[style*="padding: 120px 24px"]{padding:64px 16px!important}
+section[style*="padding: 112px 24px 96px"]{padding:64px 16px 56px!important}
+#topo{padding:48px 16px 64px!important}
+header[style*="padding: 0 24px"],footer[style*="padding: 48px 24px"]{padding-left:16px!important;padding-right:16px!important}
+.moz-nav{gap:20px!important;font-size:15px!important}
+img[style*="height: 6"]{height:420px!important}
+div[role="img"][style*="height: 600px"]{height:430px!important}
+div[role="img"] img[style*="width: 320px"]{width:230px!important;margin-left:-100px!important;top:90px!important}
+div[role="img"] img[style*="width: 230px"]{width:170px!important}
+#moz-lata{transform:scale(0.84)}
+[style*="padding: 36px; border-radius: 24px"]{padding:24px!important}
+[style*="gap: 64px"],[style*="gap: 56px"]{gap:36px!important}
+[style*="gap: 96px"]{gap:56px!important}
+[style*="gap: 48px"]{gap:32px!important}
+[style*="padding: 16px 26px"]{padding:14px 22px!important;font-size:16px!important}
+}
+@media (prefers-reduced-motion: reduce){.moz-ring,.moz-spin,.moz-wave,.moz-float,.moz-caret{animation:none}}
+</style>
+</head>
+<body>
+<div style="background: #1B1A17; color: #F4F1EC; font-family: 'Outfit', sans-serif; display: flex; flex-direction: column">
+
+<header style="display: flex; justify-content: center; padding: 0 24px; border-bottom: 1px solid #2E2C28">
+<nav aria-label="Principal" style="width: 100%; max-width: 1200px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 24px 0">
+<a href="#topo" aria-label="MOZ, início" style="display: flex; align-items: center">
+<svg viewBox="0 0 330 120" width="96" height="35" role="img" aria-label="moz"><g fill="none" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"><path stroke="#F4F1EC" d="M11,99 V48 C11,28 20,22 37,22 C54,22 63,28 63,48 V99 M63,48 C63,28 72,22 89,22 C106,22 115,28 115,48 V99"></path><circle stroke="#F15419" cx="189.5" cy="60" r="40.5"></circle><path stroke="#F4F1EC" d="M260,21 H318 L260,99 H318"></path></g></svg>
+</a>
+<div class="moz-nav" style="display: flex; flex-wrap: wrap; align-items: center; gap: 36px; font-size: 16px">
+<a href="#momentos">Momentos</a>
+<a href="#formula">Fórmula</a>
+<a href="#novidades">Novidades</a>
+</div>
+</nav>
+</header>
+
+<section id="topo" style="position: relative; overflow: hidden; display: flex; justify-content: center; padding: 120px 24px 120px; background: #1B1A17">
+<div style="position: relative; width: 100%; max-width: 1200px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="position: relative; z-index: 1; flex: 1 1 460px; display: flex; flex-direction: column; gap: 28px">
+<p style="margin: 0; align-self: flex-start; font-size: 15px; font-weight: 500; padding: 8px 16px; border-radius: 999px; border: 1px solid rgba(244,241,236,0.3); color: #E2DED7">Sem açúcar. Sem distrações.</p>
+<h1 style="margin: 0; font-size: 96px; font-weight: 500; line-height: 0.95; letter-spacing: -0.03em">Entra na zona.</h1>
+<p style="margin: 0; font-size: 21px; line-height: 1.55; color: #D2CDC4; max-width: 470px">A pastilha para os momentos que contam. Cafeína natural, L-teanina e vitaminas B, sem açúcar, numa lata que cabe no bolso.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#momentos" class="moz-cta" style="font-size: 17px; font-weight: 600; padding: 16px 26px; border-radius: 999px; background: #77E7FE; color: #0C0C0A; text-decoration: none">Ver os momentos</a>
+<a href="#formula" style="font-size: 17px; font-weight: 500; padding: 16px 26px; border-radius: 999px; border: 1px solid rgba(244,241,236,0.35); color: #F4F1EC; text-decoration: none">Ver a fórmula</a>
+</div>
+</div>
+<div style="position: relative; flex: 1 1 400px; display: flex; flex-direction: column; align-items: center; gap: 28px">
+<div id="moz-lata" style="position: relative; width: 340px; max-width: 100%; height: 340px">
+<div aria-hidden="true" style="position: absolute; left: 50%; top: 50%; width: 1000px; height: 1000px; margin: -500px 0 0 -500px; pointer-events: none; background: radial-gradient(circle at 50% 50%, rgba(241,84,25,0.5) 0%, rgba(241,84,25,0.18) 26%, rgba(27,26,23,0) 50%)"></div>
+<svg aria-hidden="true" viewBox="0 0 1000 1000" style="position: absolute; left: 50%; top: 50%; width: 1000px; height: 1000px; margin: -500px 0 0 -500px; pointer-events: none; overflow: visible"><g fill="none" stroke="#F15419" stroke-width="1.2"><circle class="moz-ring" cx="500" cy="500" r="230" stroke-opacity="0.4"></circle><circle class="moz-ring r2" cx="500" cy="500" r="290" stroke-opacity="0.28"></circle><circle class="moz-ring r3" cx="500" cy="500" r="360" stroke-opacity="0.2"></circle><circle class="moz-ring r4" cx="500" cy="500" r="430" stroke-opacity="0.13"></circle><circle class="moz-ring r5" cx="500" cy="500" r="495" stroke-opacity="0.08"></circle></g><circle class="moz-spin" cx="500" cy="500" r="325" fill="none" stroke="#77E7FE" stroke-width="1.4" stroke-opacity="0.3" stroke-dasharray="2 10"></circle></svg>
+<div style="position: absolute; inset: 0; border-radius: 58px; background: #D8CFC0; border-bottom: 12px solid #F15419; box-shadow: 0 40px 80px rgba(0,0,0,0.5), 0 0 120px rgba(241,84,25,0.22); box-sizing: border-box">
+<div style="position: absolute; left: 20px; top: 20px; right: 20px; bottom: 8px; border-radius: 42px; overflow: hidden; isolation: isolate; background: linear-gradient(165deg, #CBC1AF 0%, #B9AE9B 100%); box-shadow: inset 0 10px 22px rgba(35,33,30,0.5), inset 0 -2px 0 rgba(255,255,255,0.35)">
+
+<div style="position: absolute; left: 6px; top: 6px; width: 92px; height: 92px; border-radius: 50%; background: radial-gradient(circle at 34% 28%, rgba(255,255,255,1) 0%, rgba(255,255,255,0.85) 14%, rgba(255,255,255,0) 34%), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 62%, rgba(70,62,50,0.16) 86%, rgba(70,62,50,0.3) 100%), radial-gradient(circle at 42% 38%, #FBFAF6 0%, #EEEBE3 45%, #DCD7CB 80%, #CBC5B7 100%); box-shadow: 0 2px 2px rgba(35,33,30,0.35), 0 10px 16px rgba(35,33,30,0.38), inset 0 -6px 10px rgba(110,98,78,0.2), inset 0 3px 3px rgba(255,255,255,0.9)"><div style="position: absolute; inset: 0; border-radius: 50%; transform: rotate(20deg); opacity: 0.85; background: radial-gradient(circle at 64% 58%, rgba(58,122,74,0.75) 0px, rgba(58,122,74,0.75) 2.2px, transparent 3.2px), radial-gradient(circle at 28% 62%, rgba(58,122,74,0.65) 0px, rgba(58,122,74,0.65) 1.8px, transparent 2.8px), radial-gradient(circle at 70% 28%, rgba(58,122,74,0.6) 0px, rgba(58,122,74,0.6) 1.4px, transparent 2.4px), radial-gradient(circle at 46% 80%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.4px, transparent 2.4px), radial-gradient(circle at 36% 38%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 80% 72%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.6px, transparent 2.6px), radial-gradient(circle at 54% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 20% 44%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 60% 86%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 84% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 42% 20%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.3px, transparent 2.3px)"></div></div>
+
+<div style="position: absolute; left: 104px; top: 6px; width: 92px; height: 92px; border-radius: 50%; background: radial-gradient(circle at 34% 28%, rgba(255,255,255,1) 0%, rgba(255,255,255,0.85) 14%, rgba(255,255,255,0) 34%), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 62%, rgba(70,62,50,0.16) 86%, rgba(70,62,50,0.3) 100%), radial-gradient(circle at 42% 38%, #FBFAF6 0%, #EEEBE3 45%, #DCD7CB 80%, #CBC5B7 100%); box-shadow: 0 2px 2px rgba(35,33,30,0.35), 0 10px 16px rgba(35,33,30,0.38), inset 0 -6px 10px rgba(110,98,78,0.2), inset 0 3px 3px rgba(255,255,255,0.9)"><div style="position: absolute; inset: 0; border-radius: 50%; transform: rotate(140deg); opacity: 0.85; background: radial-gradient(circle at 64% 58%, rgba(58,122,74,0.75) 0px, rgba(58,122,74,0.75) 2.2px, transparent 3.2px), radial-gradient(circle at 28% 62%, rgba(58,122,74,0.65) 0px, rgba(58,122,74,0.65) 1.8px, transparent 2.8px), radial-gradient(circle at 70% 28%, rgba(58,122,74,0.6) 0px, rgba(58,122,74,0.6) 1.4px, transparent 2.4px), radial-gradient(circle at 46% 80%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.4px, transparent 2.4px), radial-gradient(circle at 36% 38%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 80% 72%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.6px, transparent 2.6px), radial-gradient(circle at 54% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 20% 44%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 60% 86%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 84% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 42% 20%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.3px, transparent 2.3px)"></div></div>
+
+<div style="position: absolute; left: 202px; top: 6px; width: 92px; height: 92px; border-radius: 50%; background: radial-gradient(circle at 34% 28%, rgba(255,255,255,1) 0%, rgba(255,255,255,0.85) 14%, rgba(255,255,255,0) 34%), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 62%, rgba(70,62,50,0.16) 86%, rgba(70,62,50,0.3) 100%), radial-gradient(circle at 42% 38%, #FBFAF6 0%, #EEEBE3 45%, #DCD7CB 80%, #CBC5B7 100%); box-shadow: 0 2px 2px rgba(35,33,30,0.35), 0 10px 16px rgba(35,33,30,0.38), inset 0 -6px 10px rgba(110,98,78,0.2), inset 0 3px 3px rgba(255,255,255,0.9)"><div style="position: absolute; inset: 0; border-radius: 50%; transform: rotate(250deg); opacity: 0.85; background: radial-gradient(circle at 64% 58%, rgba(58,122,74,0.75) 0px, rgba(58,122,74,0.75) 2.2px, transparent 3.2px), radial-gradient(circle at 28% 62%, rgba(58,122,74,0.65) 0px, rgba(58,122,74,0.65) 1.8px, transparent 2.8px), radial-gradient(circle at 70% 28%, rgba(58,122,74,0.6) 0px, rgba(58,122,74,0.6) 1.4px, transparent 2.4px), radial-gradient(circle at 46% 80%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.4px, transparent 2.4px), radial-gradient(circle at 36% 38%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 80% 72%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.6px, transparent 2.6px), radial-gradient(circle at 54% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 20% 44%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 60% 86%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 84% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 42% 20%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.3px, transparent 2.3px)"></div></div>
+
+<div style="position: absolute; left: 6px; top: 104px; width: 92px; height: 92px; border-radius: 50%; background: radial-gradient(circle at 34% 28%, rgba(255,255,255,1) 0%, rgba(255,255,255,0.85) 14%, rgba(255,255,255,0) 34%), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 62%, rgba(70,62,50,0.16) 86%, rgba(70,62,50,0.3) 100%), radial-gradient(circle at 42% 38%, #FBFAF6 0%, #EEEBE3 45%, #DCD7CB 80%, #CBC5B7 100%); box-shadow: 0 2px 2px rgba(35,33,30,0.35), 0 10px 16px rgba(35,33,30,0.38), inset 0 -6px 10px rgba(110,98,78,0.2), inset 0 3px 3px rgba(255,255,255,0.9)"><div style="position: absolute; inset: 0; border-radius: 50%; transform: rotate(75deg); opacity: 0.85; background: radial-gradient(circle at 64% 58%, rgba(58,122,74,0.75) 0px, rgba(58,122,74,0.75) 2.2px, transparent 3.2px), radial-gradient(circle at 28% 62%, rgba(58,122,74,0.65) 0px, rgba(58,122,74,0.65) 1.8px, transparent 2.8px), radial-gradient(circle at 70% 28%, rgba(58,122,74,0.6) 0px, rgba(58,122,74,0.6) 1.4px, transparent 2.4px), radial-gradient(circle at 46% 80%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.4px, transparent 2.4px), radial-gradient(circle at 36% 38%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 80% 72%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.6px, transparent 2.6px), radial-gradient(circle at 54% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 20% 44%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 60% 86%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 84% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 42% 20%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.3px, transparent 2.3px)"></div></div>
+
+<div style="position: absolute; left: 104px; top: 104px; width: 92px; height: 92px; border-radius: 50%; background: radial-gradient(circle at 34% 28%, rgba(255,255,255,1) 0%, rgba(255,255,255,0.85) 14%, rgba(255,255,255,0) 34%), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 62%, rgba(70,62,50,0.16) 86%, rgba(70,62,50,0.3) 100%), radial-gradient(circle at 42% 38%, #FBFAF6 0%, #EEEBE3 45%, #DCD7CB 80%, #CBC5B7 100%); box-shadow: 0 2px 2px rgba(35,33,30,0.35), 0 10px 16px rgba(35,33,30,0.38), inset 0 -6px 10px rgba(110,98,78,0.2), inset 0 3px 3px rgba(255,255,255,0.9)"><div style="position: absolute; inset: 0; border-radius: 50%; transform: rotate(310deg); opacity: 0.85; background: radial-gradient(circle at 64% 58%, rgba(58,122,74,0.75) 0px, rgba(58,122,74,0.75) 2.2px, transparent 3.2px), radial-gradient(circle at 28% 62%, rgba(58,122,74,0.65) 0px, rgba(58,122,74,0.65) 1.8px, transparent 2.8px), radial-gradient(circle at 70% 28%, rgba(58,122,74,0.6) 0px, rgba(58,122,74,0.6) 1.4px, transparent 2.4px), radial-gradient(circle at 46% 80%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.4px, transparent 2.4px), radial-gradient(circle at 36% 38%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 80% 72%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.6px, transparent 2.6px), radial-gradient(circle at 54% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 20% 44%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 60% 86%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 84% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 42% 20%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.3px, transparent 2.3px)"></div></div>
+
+<div style="position: absolute; left: 202px; top: 104px; width: 92px; height: 92px; border-radius: 50%; background: radial-gradient(circle at 34% 28%, rgba(255,255,255,1) 0%, rgba(255,255,255,0.85) 14%, rgba(255,255,255,0) 34%), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 62%, rgba(70,62,50,0.16) 86%, rgba(70,62,50,0.3) 100%), radial-gradient(circle at 42% 38%, #FBFAF6 0%, #EEEBE3 45%, #DCD7CB 80%, #CBC5B7 100%); box-shadow: 0 2px 2px rgba(35,33,30,0.35), 0 10px 16px rgba(35,33,30,0.38), inset 0 -6px 10px rgba(110,98,78,0.2), inset 0 3px 3px rgba(255,255,255,0.9)"><div style="position: absolute; inset: 0; border-radius: 50%; transform: rotate(190deg); opacity: 0.85; background: radial-gradient(circle at 64% 58%, rgba(58,122,74,0.75) 0px, rgba(58,122,74,0.75) 2.2px, transparent 3.2px), radial-gradient(circle at 28% 62%, rgba(58,122,74,0.65) 0px, rgba(58,122,74,0.65) 1.8px, transparent 2.8px), radial-gradient(circle at 70% 28%, rgba(58,122,74,0.6) 0px, rgba(58,122,74,0.6) 1.4px, transparent 2.4px), radial-gradient(circle at 46% 80%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.4px, transparent 2.4px), radial-gradient(circle at 36% 38%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 80% 72%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.6px, transparent 2.6px), radial-gradient(circle at 54% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 20% 44%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 60% 86%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 84% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 42% 20%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.3px, transparent 2.3px)"></div></div>
+
+<div style="position: absolute; left: 6px; top: 202px; width: 92px; height: 92px; border-radius: 50%; background: radial-gradient(circle at 34% 28%, rgba(255,255,255,1) 0%, rgba(255,255,255,0.85) 14%, rgba(255,255,255,0) 34%), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 62%, rgba(70,62,50,0.16) 86%, rgba(70,62,50,0.3) 100%), radial-gradient(circle at 42% 38%, #FBFAF6 0%, #EEEBE3 45%, #DCD7CB 80%, #CBC5B7 100%); box-shadow: 0 2px 2px rgba(35,33,30,0.35), 0 10px 16px rgba(35,33,30,0.38), inset 0 -6px 10px rgba(110,98,78,0.2), inset 0 3px 3px rgba(255,255,255,0.9)"><div style="position: absolute; inset: 0; border-radius: 50%; transform: rotate(35deg); opacity: 0.85; background: radial-gradient(circle at 64% 58%, rgba(58,122,74,0.75) 0px, rgba(58,122,74,0.75) 2.2px, transparent 3.2px), radial-gradient(circle at 28% 62%, rgba(58,122,74,0.65) 0px, rgba(58,122,74,0.65) 1.8px, transparent 2.8px), radial-gradient(circle at 70% 28%, rgba(58,122,74,0.6) 0px, rgba(58,122,74,0.6) 1.4px, transparent 2.4px), radial-gradient(circle at 46% 80%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.4px, transparent 2.4px), radial-gradient(circle at 36% 38%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 80% 72%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.6px, transparent 2.6px), radial-gradient(circle at 54% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 20% 44%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 60% 86%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 84% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 42% 20%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.3px, transparent 2.3px)"></div></div>
+
+<div style="position: absolute; left: 104px; top: 202px; width: 92px; height: 92px; border-radius: 50%; background: radial-gradient(circle at 34% 28%, rgba(255,255,255,1) 0%, rgba(255,255,255,0.85) 14%, rgba(255,255,255,0) 34%), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 62%, rgba(70,62,50,0.16) 86%, rgba(70,62,50,0.3) 100%), radial-gradient(circle at 42% 38%, #FBFAF6 0%, #EEEBE3 45%, #DCD7CB 80%, #CBC5B7 100%); box-shadow: 0 2px 2px rgba(35,33,30,0.35), 0 10px 16px rgba(35,33,30,0.38), inset 0 -6px 10px rgba(110,98,78,0.2), inset 0 3px 3px rgba(255,255,255,0.9)"><div style="position: absolute; inset: 0; border-radius: 50%; transform: rotate(225deg); opacity: 0.85; background: radial-gradient(circle at 64% 58%, rgba(58,122,74,0.75) 0px, rgba(58,122,74,0.75) 2.2px, transparent 3.2px), radial-gradient(circle at 28% 62%, rgba(58,122,74,0.65) 0px, rgba(58,122,74,0.65) 1.8px, transparent 2.8px), radial-gradient(circle at 70% 28%, rgba(58,122,74,0.6) 0px, rgba(58,122,74,0.6) 1.4px, transparent 2.4px), radial-gradient(circle at 46% 80%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.4px, transparent 2.4px), radial-gradient(circle at 36% 38%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 80% 72%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.6px, transparent 2.6px), radial-gradient(circle at 54% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 20% 44%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 60% 86%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 84% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 42% 20%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.3px, transparent 2.3px)"></div></div>
+
+<div style="position: absolute; left: 202px; top: 202px; width: 92px; height: 92px; border-radius: 50%; background: radial-gradient(circle at 34% 28%, rgba(255,255,255,1) 0%, rgba(255,255,255,0.85) 14%, rgba(255,255,255,0) 34%), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 62%, rgba(70,62,50,0.16) 86%, rgba(70,62,50,0.3) 100%), radial-gradient(circle at 42% 38%, #FBFAF6 0%, #EEEBE3 45%, #DCD7CB 80%, #CBC5B7 100%); box-shadow: 0 2px 2px rgba(35,33,30,0.35), 0 10px 16px rgba(35,33,30,0.38), inset 0 -6px 10px rgba(110,98,78,0.2), inset 0 3px 3px rgba(255,255,255,0.9)"><div style="position: absolute; inset: 0; border-radius: 50%; transform: rotate(120deg); opacity: 0.85; background: radial-gradient(circle at 64% 58%, rgba(58,122,74,0.75) 0px, rgba(58,122,74,0.75) 2.2px, transparent 3.2px), radial-gradient(circle at 28% 62%, rgba(58,122,74,0.65) 0px, rgba(58,122,74,0.65) 1.8px, transparent 2.8px), radial-gradient(circle at 70% 28%, rgba(58,122,74,0.6) 0px, rgba(58,122,74,0.6) 1.4px, transparent 2.4px), radial-gradient(circle at 46% 80%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.4px, transparent 2.4px), radial-gradient(circle at 36% 38%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 80% 72%, rgba(58,122,74,0.55) 0px, rgba(58,122,74,0.55) 1.6px, transparent 2.6px), radial-gradient(circle at 54% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 20% 44%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 60% 86%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.2px, transparent 2.2px), radial-gradient(circle at 84% 46%, rgba(58,122,74,0.45) 0px, rgba(58,122,74,0.45) 1.1px, transparent 2.1px), radial-gradient(circle at 42% 20%, rgba(58,122,74,0.5) 0px, rgba(58,122,74,0.5) 1.3px, transparent 2.3px)"></div></div>
+
+</div>
+</div>
+<div id="moz-lid" style="position: absolute; inset: 0; transform-origin: 50% 0%; transform: perspective(1300px) rotateX(0deg); transition: transform 0.12s linear; transform-style: preserve-3d">
+<div style="position: absolute; inset: 0; border-radius: 58px; background: linear-gradient(180deg, #D3CABB 0%, #C4BAA8 100%); transform: rotateX(180deg); backface-visibility: hidden; -webkit-backface-visibility: hidden; box-shadow: inset 0 0 0 14px #CFC5B4, inset 0 0 0 16px rgba(35,33,30,0.18), inset 0 0 40px rgba(35,33,30,0.25)"></div>
+<div id="moz-lidface" style="position: absolute; inset: 0; border-radius: 58px; background: #ECE5DA; backface-visibility: hidden; -webkit-backface-visibility: hidden; box-shadow: 0 30px 70px rgba(0,0,0,0.45), inset 0 1px 0 #FFFFFF; padding: 58px 34px 40px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; align-items: center">
+<svg viewBox="0 0 330 120" width="180" height="65" role="img" aria-label="Lata MOZ com o logótipo em relevo" style="filter: drop-shadow(-1.5px -1.5px 0 rgba(255,255,255,0.9)) drop-shadow(1.8px 1.8px 1.2px rgba(35,33,30,0.3))"><g fill="none" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"><path stroke="#ECE5DA" d="M11,99 V48 C11,28 20,22 37,22 C54,22 63,28 63,48 V99 M63,48 C63,28 72,22 89,22 C106,22 115,28 115,48 V99"></path><circle stroke="#F15419" cx="189.5" cy="60" r="40.5"></circle><path stroke="#ECE5DA" d="M260,21 H318 L260,99 H318"></path></g></svg>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 4px">
+<p style="margin: 0; font-size: 20px; font-weight: 500; color: #C2410C">focus gum</p>
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.18em; color: #23211E">PEPPERMINT</p>
+</div>
+</div>
+</div>
+</div>
+<p style="position: relative; margin: 0; font-size: 14px; letter-spacing: 0.08em; color: #B8B3AA">Desliza para abrir</p>
+</div>
+</div>
+</section>
+
+<section style="position: relative; overflow: hidden; display: flex; justify-content: center; padding: 112px 24px; background: #23221E">
+<svg aria-hidden="true" viewBox="0 0 1440 400" preserveAspectRatio="none" style="position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.5"><g fill="none" stroke="#F4F1EC" stroke-opacity="0.07" stroke-width="1.2"><path class="moz-wave" d="M0,120 C240,60 420,180 720,120 C1020,60 1200,170 1440,110"></path><path class="moz-wave w2" d="M0,160 C240,100 420,220 720,160 C1020,100 1200,210 1440,150"></path><path class="moz-wave w3" d="M0,200 C240,140 420,260 720,200 C1020,140 1200,250 1440,190"></path><path class="moz-wave w4" d="M0,240 C240,180 420,300 720,240 C1020,180 1200,290 1440,230"></path><path class="moz-wave w5" d="M0,280 C240,220 420,340 720,280 C1020,220 1200,330 1440,270"></path></g></svg>
+<div style="position: relative; width: 100%; max-width: 1200px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+<div style="position: relative; z-index: 1; flex: 1 1 440px; display: flex; flex-direction: column; gap: 24px">
+<p style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #F15419">Falta de foco?</p>
+<h2 style="margin: 0; font-size: 56px; font-weight: 500; line-height: 1.06; letter-spacing: -0.015em">É o momento em que voltas a focar.</h2>
+<p style="margin: 0; font-size: 20px; line-height: 1.6; color: #C4BFB6; max-width: 520px">Sem bebidas, sem açúcar, sem distrações. Uma pastilha discreta, que levas contigo para onde fores e que não precisa de pausa para o café.</p>
+</div>
+<div role="img" aria-label="Pastilhas MOZ brancas com partículas verdes a flutuar sobre uma luz laranja" style="position: relative; flex: 1 1 420px; height: 600px">
+<div aria-hidden="true" style="position: absolute; left: 50%; top: 58%; width: 760px; height: 760px; margin: -380px 0 0 -380px; background: radial-gradient(circle at 50% 50%, rgba(241,84,25,0.55) 0%, rgba(241,84,25,0.22) 30%, rgba(35,34,30,0) 62%)"></div>
+<svg aria-hidden="true" viewBox="0 0 600 600" style="position: absolute; left: 50%; top: 52%; width: 600px; height: 600px; margin: -300px 0 0 -300px; pointer-events: none"><circle class="moz-spin" cx="300" cy="300" r="270" fill="none" stroke="#77E7FE" stroke-width="1.4" stroke-opacity="0.22" stroke-dasharray="2 10"></circle></svg>
+<img class="moz-float f4" src="pastilha-2.png" alt="" style="position: absolute; right: 6%; top: 0px; width: 150px; transform: scaleX(-1); filter: blur(2.5px) brightness(0.85); opacity: 0.9">
+<img class="moz-float f3" src="pastilha-3.png" alt="" style="position: absolute; left: 4%; top: 60px; width: 120px; filter: blur(1px)">
+<img class="moz-float" src="pastilha-1.png" alt="" style="position: absolute; left: 50%; top: 120px; width: 320px; margin-left: -140px; filter: drop-shadow(0 30px 40px rgba(0,0,0,0.5))">
+<img class="moz-float f2" src="pastilha-2.png" alt="" style="position: absolute; left: 2%; bottom: 10px; width: 230px; filter: drop-shadow(0 24px 30px rgba(0,0,0,0.45))">
+</div>
+</div>
+</section>
+
+<section aria-labelledby="sinais-t" style="position: relative; overflow: hidden; display: flex; justify-content: center; padding: 120px 24px; background: #1B1A17; border-bottom: 1px solid #2E2C28">
+<div style="position: relative; width: 100%; max-width: 1200px; display: flex; flex-direction: column; gap: 28px">
+<p style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #F15419">Reconheces isto?</p>
+<h2 id="sinais-t" aria-label="Sinais de que precisas de foco: relês o mesmo parágrafo; o telemóvel aparece na mão sem dares por isso; o ritmo abranda a meio da tarde; mais um café já não apetece; a lista de tarefas continua igual." style="margin: 0; box-sizing: border-box; height: 3.6em; padding: 0.5em 0.7em; display: flex; align-items: center; overflow: hidden; border-radius: 28px; background: #23221E; border: 1px solid #383630; font-size: clamp(30px, 4.6vw, 60px); font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; max-width: 1060px"><span><span id="moz-sig">Relês o mesmo parágrafo.</span><span class="moz-caret" style="height: 0.9em"></span></span></h2>
+<div aria-hidden="true" style="max-width: 1060px; height: 2px; margin-top: -12px; border-radius: 2px; background: rgba(119,231,254,0.1); overflow: hidden"><div id="moz-sigbar" style="width: 0%; height: 2px; background: rgba(119,231,254,0.6); transition: width 0.08s linear"></div></div>
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #C4BFB6; max-width: 640px">São sinais normais de um dia cheio, e acontecem a toda a gente. É nesses momentos que a MOZ faz sentido.</p>
+</div>
+</section>
+
+<section id="momentos" style="position: relative; overflow: hidden; display: flex; justify-content: center; padding: 112px 24px; background: radial-gradient(ellipse at 0% 0%, rgba(241,84,25,0.18) 0%, #1B1A17 45%)">
+<div style="position: relative; width: 100%; max-width: 1200px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
+<p style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #F15419">Momentos</p>
+<h2 style="margin: 0; font-size: 44px; font-weight: 500; line-height: 1.12; letter-spacing: -0.01em">Para os momentos em que precisas de estar presente.</h2>
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #C4BFB6">A MOZ adapta-se ao teu dia. É para aqueles momentos em que queres manter o ritmo e ainda há trabalho pela frente.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px; padding: 36px; border-radius: 24px; background: #262420; border: 1px solid #383630">
+<h3 style="margin: 0; font-size: 26px; font-weight: 500">A estudar</h3>
+<div style="position: relative">
+<p aria-hidden="true" style="margin: 0; font-size: 17px; line-height: 1.6; visibility: hidden">Semanas de matéria e horas seguidas à secretária ou na biblioteca. Quando o estudo se estende e mais um café já não apetece.</p>
+<p aria-label="Semanas de matéria e horas seguidas à secretária ou na biblioteca. Quando o estudo se estende e mais um café já não apetece." style="position: absolute; inset: 0; margin: 0; font-size: 17px; line-height: 1.6; color: #C4BFB6"><span class="moz-typed" data-full="Semanas de matéria e horas seguidas à secretária ou na biblioteca. Quando o estudo se estende e mais um café já não apetece.">Semanas de matéria e horas seguidas à secretária ou na biblioteca. Quando o estudo se estende e mais um café já não apetece.</span><span class="moz-caret moz-tcaret" style="display:none"></span></p>
+</div>
+<div style="flex: 1"></div>
+<p style="margin: 0; padding-top: 16px; border-top: 1px solid #383630; font-size: 15px; color: #E2DED7">Para as horas longas.</p>
+</div>
+
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px; padding: 36px; border-radius: 24px; background: #262420; border: 1px solid #383630">
+<h3 style="margin: 0; font-size: 26px; font-weight: 500">A trabalhar</h3>
+<div style="position: relative">
+<p aria-hidden="true" style="margin: 0; font-size: 17px; line-height: 1.6; visibility: hidden">Tarefas a meio e uma tarde que se arrasta. Quando ainda falta metade do dia e queres manter o ritmo.</p>
+<p aria-label="Tarefas a meio e uma tarde que se arrasta. Quando ainda falta metade do dia e queres manter o ritmo." style="position: absolute; inset: 0; margin: 0; font-size: 17px; line-height: 1.6; color: #C4BFB6"><span class="moz-typed" data-full="Tarefas a meio e uma tarde que se arrasta. Quando ainda falta metade do dia e queres manter o ritmo.">Tarefas a meio e uma tarde que se arrasta. Quando ainda falta metade do dia e queres manter o ritmo.</span><span class="moz-caret moz-tcaret" style="display:none"></span></p>
+</div>
+<div style="flex: 1"></div>
+<p style="margin: 0; padding-top: 16px; border-top: 1px solid #383630; font-size: 15px; color: #E2DED7">Sem açúcar e sem sair do lugar.</p>
+</div>
+
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px; padding: 36px; border-radius: 24px; background: #262420; border: 1px solid #383630">
+<h3 style="margin: 0; font-size: 26px; font-weight: 500">Antes do que importa</h3>
+<div style="position: relative">
+<p aria-hidden="true" style="margin: 0; font-size: 17px; line-height: 1.6; visibility: hidden">Uma apresentação, uma entrevista, uma conversa importante. Os minutos antes, em que queres estar presente.</p>
+<p aria-label="Uma apresentação, uma entrevista, uma conversa importante. Os minutos antes, em que queres estar presente." style="position: absolute; inset: 0; margin: 0; font-size: 17px; line-height: 1.6; color: #C4BFB6"><span class="moz-typed" data-full="Uma apresentação, uma entrevista, uma conversa importante. Os minutos antes, em que queres estar presente.">Uma apresentação, uma entrevista, uma conversa importante. Os minutos antes, em que queres estar presente.</span><span class="moz-caret moz-tcaret" style="display:none"></span></p>
+</div>
+<div style="flex: 1"></div>
+<p style="margin: 0; padding-top: 16px; border-top: 1px solid #383630; font-size: 15px; color: #E2DED7">Entra na zona.</p>
+</div>
+
+</div>
+<p style="margin: 0; font-size: 15px; color: #A39E95">Não é recomendado o consumo de mais de uma lata por dia.</p>
+</div>
+</section>
+
+<section style="position: relative; overflow: hidden; display: flex; justify-content: center; padding: 112px 24px; background: #23221E">
+<div style="position: relative; width: 100%; max-width: 1200px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 24px; max-width: 620px">
+<p style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #F15419">A lata</p>
+<h2 style="margin: 0; font-size: 52px; font-weight: 500; line-height: 1.06; letter-spacing: -0.015em">Feita para andar contigo.</h2>
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #C4BFB6; max-width: 500px">Metal mate em tom areia, o nome em relevo e um único ponto de cor: o "o" laranja, a zona. Abre com uma mão, fecha bem e cabe em qualquer bolso. Compras a lata uma vez; depois, só recargas.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<img src="lata-mao.jpg" alt="Mão a segurar a lata MOZ, quadrada, cor areia, com o logótipo em relevo, o o laranja e o rebordo laranja" style="flex: 1 1 360px; min-width: 0; height: 620px; object-fit: cover; border-radius: 28px; box-shadow: 0 30px 70px rgba(0,0,0,0.45)">
+<img src="recargas.jpg" alt="Caixa MOZ com 6 recargas e uma recarga aberta com 9 pastilhas em blister" style="flex: 1 1 360px; min-width: 0; height: 620px; object-fit: cover; border-radius: 28px">
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<p style="margin: 0; font-size: 15px; padding: 10px 16px; border-radius: 999px; border: 1px solid #45423B; color: #E2DED7">9 pastilhas por recarga</p>
+<p style="margin: 0; font-size: 15px; padding: 10px 16px; border-radius: 999px; border: 1px solid #45423B; color: #E2DED7">Caixa de 6 recargas</p>
+</div>
+</div>
+</section>
+
+<section id="formula" style="position: relative; overflow: hidden; display: flex; justify-content: center; padding: 112px 24px; background: #1B1A17">
+<svg aria-hidden="true" viewBox="0 0 600 600" style="position: absolute; right: -160px; top: 40px; width: 600px; height: 600px; opacity: 0.6"><g fill="none" stroke="#77E7FE" stroke-width="1"><circle class="moz-ring" cx="300" cy="300" r="120" stroke-opacity="0.12"></circle><circle class="moz-ring r3" cx="300" cy="300" r="190" stroke-opacity="0.08"></circle><circle class="moz-ring r5" cx="300" cy="300" r="260" stroke-opacity="0.05"></circle></g></svg>
+<div style="position: relative; width: 100%; max-width: 1200px; display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #F15419">Fórmula</p>
+<h2 style="margin: 0; font-size: 44px; font-weight: 500; line-height: 1.1; letter-spacing: -0.01em">Poucos ingredientes, todos à vista.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #C4BFB6">Valores por pastilha.</p>
+</div>
+<div style="flex: 2 1 560px; display: flex; flex-direction: column">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; padding: 24px 0; border-top: 1px solid #3A3833">
+<p style="margin: 0; width: 180px; font-size: 32px; font-weight: 500">40 mg</p>
+<p style="margin: 0; flex: 1 1 280px; font-size: 18px; line-height: 1.5; color: #D2CDC4">Cafeína natural, de grão de café verde. Cerca de meio café.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; padding: 24px 0; border-top: 1px solid #3A3833">
+<p style="margin: 0; width: 180px; font-size: 32px; font-weight: 500">L-teanina</p>
+<p style="margin: 0; flex: 1 1 280px; font-size: 18px; line-height: 1.5; color: #D2CDC4">Aminoácido do chá verde, presente naturalmente no chá.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; padding: 24px 0; border-top: 1px solid #3A3833">
+<p style="margin: 0; width: 180px; font-size: 32px; font-weight: 500">B6 + B12</p>
+<p style="margin: 0; flex: 1 1 280px; font-size: 18px; line-height: 1.5; color: #D2CDC4">Vitaminas que contribuem para a redução do cansaço e da fadiga.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; padding: 24px 0; border-top: 1px solid #3A3833; border-bottom: 1px solid #3A3833">
+<p style="margin: 0; width: 180px; font-size: 32px; font-weight: 500">0 g</p>
+<p style="margin: 0; flex: 1 1 280px; font-size: 18px; line-height: 1.5; color: #D2CDC4">De açúcar. Adoçada com xilitol.</p>
+</div>
+<p style="margin: 20px 0 0; font-size: 14px; line-height: 1.6; color: #A39E95">Suplemento alimentar com cafeína. Não é recomendado o consumo de mais de uma lata por dia. Não recomendado a crianças nem a mulheres grávidas ou a amamentar. Não substitui um regime alimentar variado.</p>
+</div>
+</div>
+</section>
+
+<section id="onde" style="position: relative; overflow: hidden; display: flex; justify-content: center; padding: 112px 24px; background: #23221E">
+<div style="position: relative; width: 100%; max-width: 1200px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #F15419">Onde vais encontrar</p>
+<h2 style="margin: 0; font-size: 48px; font-weight: 500; line-height: 1.08; letter-spacing: -0.015em">Perto de onde estudas.</h2>
+</div>
+<p style="margin: 0; flex: 1 1 360px; font-size: 18px; line-height: 1.6; color: #C4BFB6">Nos bares e cafetarias das faculdades, nas vending machines dentro das universidades, nos quiosques à volta do campus e online. Um expositor pequeno, ao lado da máquina do café, porque a ideia não é substituir o café, é juntar-se a ele.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<img src="bar.jpg" alt="Expositor MOZ no balcão de um bar de faculdade, ao lado da máquina de café, com estudantes ao fundo" style="flex: 2 1 460px; min-width: 0; height: 620px; object-fit: cover; border-radius: 28px">
+<img src="vending.jpg" alt="Recarga MOZ numa vending machine, entre snacks e pastilhas" style="flex: 1 1 360px; min-width: 0; height: 620px; object-fit: cover; object-position: 50% 55%; border-radius: 28px">
+</div>
+</div>
+</section>
+
+<section id="novidades" style="position: relative; overflow: hidden; display: flex; justify-content: center; padding: 112px 24px 96px; background: radial-gradient(ellipse at 85% 100%, rgba(241,84,25,0.3) 0%, #1B1A17 55%)">
+<div style="position: relative; width: 100%; max-width: 1100px; display: flex; flex-direction: column; gap: 96px">
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 18px">
+<p style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #F15419">Ponto de situação</p>
+<h2 style="margin: 0; font-size: 48px; font-weight: 500; line-height: 1.08; letter-spacing: -0.015em">A MOZ está em validação.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #C4BFB6">Estamos a trabalhar em duas frentes. De um lado, a validação de mercado: recolher feedback junto dos consumidores, com a fórmula já validada. Do outro, a produção: preparar a lata, as recargas e os primeiros pontos de venda. Se quiseres ficar a par de cada passo, deixa o teu email. Vem ser MOZ (Master of Zone).</p>
+</div>
+<div style="flex: 1 1 380px; box-sizing: border-box; padding: 32px; border-radius: 24px; background: #262420; border: 1px solid #383630">
+<div id="moz-form">
+<form style="display: flex; flex-direction: column; gap: 16px">
+<label for="email" style="font-size: 15px; color: #D2CDC4">O teu email</label>
+<input id="email" class="moz-input" type="email" placeholder="nome@email.pt" style="min-height: 52px; box-sizing: border-box; padding: 0 20px; border-radius: 14px; border: 1px solid #45423B; background: #1B1A17; color: #F4F1EC; font-family: 'Outfit', sans-serif; font-size: 17px">
+<label style="display: flex; gap: 10px; align-items: center; font-size: 15px; color: #C4BFB6">
+<input type="checkbox" style="width: 20px; height: 20px; accent-color: #77E7FE">
+Tenho 18 anos ou mais.
+</label>
+<button type="button" class="moz-cta" id="moz-send" style="min-height: 52px; border-radius: 999px; border: 1px solid rgba(119,231,254,0.6); background: transparent; color: #77E7FE; font-family: 'Outfit', sans-serif; font-size: 17px; font-weight: 600; cursor: pointer">Ficar a par</button>
+</form>
+</div>
+<div id="moz-thanks" style="display:none">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 22px; font-weight: 500">Obrigado.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.5; color: #C4BFB6">Damos notícias assim que houver novidades.</p>
+</div>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+<p style="margin: 0; flex: 1 1 420px; font-size: 88px; font-weight: 500; line-height: 1; letter-spacing: -0.03em">Entra na zona.</p>
+<div style="position: relative; flex: 1 1 380px; min-width: 0; max-width: 520px">
+<svg aria-hidden="true" viewBox="0 0 800 800" style="position: absolute; left: 50%; top: 50%; width: 800px; height: 800px; margin: -400px 0 0 -400px; pointer-events: none"><circle class="moz-spin" cx="400" cy="400" r="380" fill="none" stroke="#77E7FE" stroke-width="1.4" stroke-opacity="0.22" stroke-dasharray="2 10"></circle></svg>
+<img src="expositor.jpg" alt="Expositor MOZ com três prateleiras de latas e o logótipo com o o laranja iluminado" style="position: relative; display: block; width: 100%; height: 600px; object-fit: cover; border-radius: 28px">
+</div>
+</div>
+</div>
+</section>
+
+<footer style="display: flex; justify-content: center; padding: 48px 24px; border-top: 1px solid #2E2C28">
+<div style="width: 100%; max-width: 1200px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px">
+<svg viewBox="0 0 330 120" width="80" height="29" role="img" aria-label="moz"><g fill="none" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"><path stroke="#F4F1EC" d="M11,99 V48 C11,28 20,22 37,22 C54,22 63,28 63,48 V99 M63,48 C63,28 72,22 89,22 C106,22 115,28 115,48 V99"></path><circle stroke="#F15419" cx="189.5" cy="60" r="40.5"></circle><path stroke="#F4F1EC" d="M260,21 H318 L260,99 H318"></path></g></svg>
+<p style="margin: 0; font-size: 14px; color: #A39E95">© 2026 MOZ · Suplemento alimentar · Página privada, versão de apresentação</p>
+</div>
+</footer>
+
+</div>
+<script>
+(function(){
+var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var lid=document.getElementById('moz-lid'),face=document.getElementById('moz-lidface'),tin=document.getElementById('moz-lata');
+var busy=false;
+function onScroll(){ if(busy) return; busy=true; requestAnimationFrame(function(){ busy=false;
+  var y=window.scrollY||0, vh=window.innerHeight||800, start=80;
+  if(tin){ start=Math.max(0,tin.getBoundingClientRect().top+y-vh*0.6)+80; }
+  var p=Math.min(Math.max((y-start)/340,0),1), a=Math.round(Math.sin(p*Math.PI)*108), lift=Math.round(a/108*40);
+  if(lid) lid.style.transform='perspective(1300px) rotateX('+a+'deg)';
+  if(face) face.style.boxShadow='0 '+(30-lift/2)+'px '+(70+lift)+'px rgba(0,0,0,0.45), inset 0 1px 0 #FFFFFF';
+  checkMoments(); }); }
+var typed=[].slice.call(document.querySelectorAll('.moz-typed')), carets=[].slice.call(document.querySelectorAll('.moz-tcaret')), armed=false;
+var mom=document.getElementById('momentos');
+if(!reduce&&mom&&mom.getBoundingClientRect().top>window.innerHeight){ armed=true; typed.forEach(function(t){t.textContent='';}); }
+function checkMoments(){ if(!armed||!mom) return;
+  if(mom.getBoundingClientRect().top<window.innerHeight*0.7){ armed=false; var n=0;
+    carets.forEach(function(c){c.style.display='inline-block';});
+    var tm=setInterval(function(){ n+=2; typed.forEach(function(t,i){ var f=t.getAttribute('data-full'); t.textContent=f.slice(0,n); if(n>=f.length) carets[i].style.display='none'; });
+      if(n>=140) clearInterval(tm); },28); } }
+window.addEventListener('scroll',onScroll,{passive:true});
+var sig=['Relês o mesmo parágrafo.','O telemóvel aparece na mão sem dares por isso.','O ritmo abranda a meio da tarde.','Mais um café já não apetece.','A lista de tarefas continua igual.'];
+var sEl=document.getElementById('moz-sig'), bar=document.getElementById('moz-sigbar'), g={i:0,c:0,dir:1,hold:0};
+if(sEl&&!reduce){ setInterval(function(){ var t=sig[g.i]; if(g.hold>0){g.hold--;return;}
+  if(g.dir===1){ g.c++; if(g.c>=t.length){g.dir=-1;g.hold=38;} } else { g.c-=2; if(g.c<=0){g.c=0;g.dir=1;g.i=(g.i+1)%sig.length;g.hold=6;} }
+  sEl.textContent=sig[g.i].slice(0,g.c); if(bar) bar.style.width=Math.round(g.c/sig[g.i].length*100)+'%'; },45); }
+var send=document.getElementById('moz-send');
+if(send) send.addEventListener('click',function(){ document.getElementById('moz-form').style.display='none'; document.getElementById('moz-thanks').style.display='block'; });
+})();
+</script>
+</body>
+</html>
