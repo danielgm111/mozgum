@@ -89,7 +89,7 @@ img[style*="height: 6"]{height:420px!important}
 <div style="position: relative; z-index: 1; flex: 1 1 460px; display: flex; flex-direction: column; gap: 28px">
 <p style="margin: 0; align-self: flex-start; font-size: 15px; font-weight: 500; padding: 8px 16px; border-radius: 999px; border: 1px solid rgba(244,241,236,0.3); color: #E2DED7">Sem açúcar. Sem distrações.</p>
 <h1 style="margin: 0; font-size: 96px; font-weight: 500; line-height: 0.95; letter-spacing: -0.03em">Entra na zona.</h1>
-<p style="margin: 0; font-size: 21px; line-height: 1.55; color: #D2CDC4; max-width: 470px">A pastilha elástica para os momentos que contam. Cafeína, L-teanina e vitaminas B, sem açúcar, numa lata que cabe no bolso.</p>
+<p style="margin: 0; font-size: 21px; line-height: 1.55; color: #D2CDC4; max-width: 470px">Cafeína, L-teanina e vitaminas B, sem açúcar, numa lata que cabe no bolso.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <a href="#momentos" class="moz-cta" style="font-size: 17px; font-weight: 600; padding: 16px 26px; border-radius: 999px; background: #77E7FE; color: #0C0C0A; text-decoration: none">Ver os momentos</a>
 <a href="#formula" style="font-size: 17px; font-weight: 500; padding: 16px 26px; border-radius: 999px; border: 1px solid rgba(244,241,236,0.35); color: #F4F1EC; text-decoration: none">Ver a fórmula</a>
@@ -144,41 +144,113 @@ img[style*="height: 6"]{height:420px!important}
 <div style="position: relative; width: 100%; max-width: 1200px; display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
 <p style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #F15419">Momentos</p>
-<h2 style="margin: 0; font-size: 44px; font-weight: 500; line-height: 1.12; letter-spacing: -0.01em">Para os momentos em que precisas de estar presente.</h2>
+<h2 style="margin: 0; font-size: 44px; font-weight: 500; line-height: 1.12; letter-spacing: -0.01em">Um dia com a MOZ.</h2>
 <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #C4BFB6">A MOZ adapta-se ao teu dia. É para aqueles momentos em que queres manter o ritmo e ainda há trabalho pela frente.</p>
 </div>
-<div style="display: flex; flex-wrap: wrap; gap: 20px">
-
-<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px; padding: 36px; border-radius: 24px; background: #262420; border: 1px solid #383630">
-<h3 style="margin: 0; font-size: 26px; font-weight: 500">A estudar</h3>
-<div style="position: relative">
-<p aria-hidden="true" style="margin: 0; font-size: 17px; line-height: 1.6; visibility: hidden">Semanas de matéria e horas seguidas à secretária ou na biblioteca. Quando o estudo se estende e mais um café já não apetece.</p>
-<p aria-label="Semanas de matéria e horas seguidas à secretária ou na biblioteca. Quando o estudo se estende e mais um café já não apetece." style="position: absolute; inset: 0; margin: 0; font-size: 17px; line-height: 1.6; color: #C4BFB6"><span class="moz-typed" data-full="Semanas de matéria e horas seguidas à secretária ou na biblioteca. Quando o estudo se estende e mais um café já não apetece.">Semanas de matéria e horas seguidas à secretária ou na biblioteca. Quando o estudo se estende e mais um café já não apetece.</span><span class="moz-caret moz-tcaret" style="display:none"></span></p>
+<div style="display: flex; flex-direction: column; gap: 40px">
+<div role="tablist" aria-label="Escolhe o teu dia" style="display: flex; flex-wrap: wrap; gap: 10px">
+<button type="button" role="tab" id="moz-tab-est" aria-selected="true" style="font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 500; padding: 12px 22px; border-radius: 999px; cursor: pointer; background: #F4F1EC; color: #1B1A17; border: 1px solid #F4F1EC; transition: background 0.25s, color 0.25s">Estudantes</button>
+<button type="button" role="tab" id="moz-tab-trab" aria-selected="false" style="font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 500; padding: 12px 22px; border-radius: 999px; cursor: pointer; background: transparent; color: #D2CDC4; border: 1px solid #45423B; transition: background 0.25s, color 0.25s">Trabalhadores</button>
 </div>
-<div style="flex: 1"></div>
-<p style="margin: 0; padding-top: 16px; border-top: 1px solid #383630; font-size: 15px; color: #E2DED7">Para as horas longas.</p>
+<div id="moz-tl" role="tabpanel" style="display: flex; flex-wrap: wrap; gap: 36px 28px">
+<div class="moz-tl" data-k="est" style="display:contents">
+<div class="moz-tlitem" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 14px">
+<div style="position: relative; height: 2px; border-radius: 2px; background: #383630">
+<div class="moz-tlfill" style="height: 2px; border-radius: 2px; width: 100%; background: #F15419; transition: width 0.12s linear"></div>
+<span class="moz-tlmark" aria-hidden="true" style="position: absolute; top: -7px; left: calc(0% - 8px); width: 16px; height: 16px; box-sizing: border-box; border-radius: 50%; border: 3.5px solid #F15419; background: #1B1A17; box-shadow: 0 0 16px rgba(241,84,25,0.65); opacity: 0; transition: left 0.12s linear, opacity 0.25s"></span>
 </div>
-
-<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px; padding: 36px; border-radius: 24px; background: #262420; border: 1px solid #383630">
-<h3 style="margin: 0; font-size: 26px; font-weight: 500">A trabalhar</h3>
-<div style="position: relative">
-<p aria-hidden="true" style="margin: 0; font-size: 17px; line-height: 1.6; visibility: hidden">Tarefas a meio e uma tarde que se arrasta. Quando ainda falta metade do dia e queres manter o ritmo.</p>
-<p aria-label="Tarefas a meio e uma tarde que se arrasta. Quando ainda falta metade do dia e queres manter o ritmo." style="position: absolute; inset: 0; margin: 0; font-size: 17px; line-height: 1.6; color: #C4BFB6"><span class="moz-typed" data-full="Tarefas a meio e uma tarde que se arrasta. Quando ainda falta metade do dia e queres manter o ritmo.">Tarefas a meio e uma tarde que se arrasta. Quando ainda falta metade do dia e queres manter o ritmo.</span><span class="moz-caret moz-tcaret" style="display:none"></span></p>
+<div style="display: flex; align-items: center; gap: 12px"><span class="moz-tldot" style="flex: 0 0 10px; width: 10px; height: 10px; border-radius: 50%; background: #F15419; transition: background 0.3s"></span><p class="moz-tltime" aria-label="09:00" style="margin: 0; display: flex; font-size: 30px; font-weight: 500; line-height: 1; letter-spacing: -0.01em; color: #F4F1EC; transition: color 0.4s"><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="0" style="display: block; transform: translateY(0em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.00s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="9" style="display: block; transform: translateY(-9em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.08s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true">:</span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="0" style="display: block; transform: translateY(0em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.16s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="0" style="display: block; transform: translateY(0em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.24s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span></p></div>
+<div class="moz-tltext" style="display: flex; flex-direction: column; gap: 14px; opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s">
+<p style="margin: 0; font-size: 20px; font-weight: 500; color: #F4F1EC">Aula das nove</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C4BFB6">A primeira aula do dia, e ainda ninguém chegou bem a acordar.</p>
 </div>
-<div style="flex: 1"></div>
-<p style="margin: 0; padding-top: 16px; border-top: 1px solid #383630; font-size: 15px; color: #E2DED7">Sem açúcar e sem sair do lugar.</p>
 </div>
 
-<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px; padding: 36px; border-radius: 24px; background: #262420; border: 1px solid #383630">
-<h3 style="margin: 0; font-size: 26px; font-weight: 500">Antes do que importa</h3>
-<div style="position: relative">
-<p aria-hidden="true" style="margin: 0; font-size: 17px; line-height: 1.6; visibility: hidden">Uma apresentação, uma entrevista, uma conversa importante. Os minutos antes, em que queres estar presente.</p>
-<p aria-label="Uma apresentação, uma entrevista, uma conversa importante. Os minutos antes, em que queres estar presente." style="position: absolute; inset: 0; margin: 0; font-size: 17px; line-height: 1.6; color: #C4BFB6"><span class="moz-typed" data-full="Uma apresentação, uma entrevista, uma conversa importante. Os minutos antes, em que queres estar presente.">Uma apresentação, uma entrevista, uma conversa importante. Os minutos antes, em que queres estar presente.</span><span class="moz-caret moz-tcaret" style="display:none"></span></p>
+<div class="moz-tlitem" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 14px">
+<div style="position: relative; height: 2px; border-radius: 2px; background: #383630">
+<div class="moz-tlfill" style="height: 2px; border-radius: 2px; width: 100%; background: #F15419; transition: width 0.12s linear"></div>
+<span class="moz-tlmark" aria-hidden="true" style="position: absolute; top: -7px; left: calc(0% - 8px); width: 16px; height: 16px; box-sizing: border-box; border-radius: 50%; border: 3.5px solid #F15419; background: #1B1A17; box-shadow: 0 0 16px rgba(241,84,25,0.65); opacity: 0; transition: left 0.12s linear, opacity 0.25s"></span>
 </div>
-<div style="flex: 1"></div>
-<p style="margin: 0; padding-top: 16px; border-top: 1px solid #383630; font-size: 15px; color: #E2DED7">Entra na zona.</p>
+<div style="display: flex; align-items: center; gap: 12px"><span class="moz-tldot" style="flex: 0 0 10px; width: 10px; height: 10px; border-radius: 50%; background: #F15419; transition: background 0.3s"></span><p class="moz-tltime" aria-label="14:30" style="margin: 0; display: flex; font-size: 30px; font-weight: 500; line-height: 1; letter-spacing: -0.01em; color: #F4F1EC; transition: color 0.4s"><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="1" style="display: block; transform: translateY(-1em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.00s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="4" style="display: block; transform: translateY(-4em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.08s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true">:</span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="3" style="display: block; transform: translateY(-3em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.16s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="0" style="display: block; transform: translateY(0em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.24s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span></p></div>
+<div class="moz-tltext" style="display: flex; flex-direction: column; gap: 14px; opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s">
+<p style="margin: 0; font-size: 20px; font-weight: 500; color: #F4F1EC">Biblioteca</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C4BFB6">Depois de almoço, a matéria parece mais pesada do que de manhã.</p>
+</div>
 </div>
 
+<div class="moz-tlitem" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 14px">
+<div style="position: relative; height: 2px; border-radius: 2px; background: #383630">
+<div class="moz-tlfill" style="height: 2px; border-radius: 2px; width: 100%; background: #F15419; transition: width 0.12s linear"></div>
+<span class="moz-tlmark" aria-hidden="true" style="position: absolute; top: -7px; left: calc(0% - 8px); width: 16px; height: 16px; box-sizing: border-box; border-radius: 50%; border: 3.5px solid #F15419; background: #1B1A17; box-shadow: 0 0 16px rgba(241,84,25,0.65); opacity: 0; transition: left 0.12s linear, opacity 0.25s"></span>
+</div>
+<div style="display: flex; align-items: center; gap: 12px"><span class="moz-tldot" style="flex: 0 0 10px; width: 10px; height: 10px; border-radius: 50%; background: #F15419; transition: background 0.3s"></span><p class="moz-tltime" aria-label="17:00" style="margin: 0; display: flex; font-size: 30px; font-weight: 500; line-height: 1; letter-spacing: -0.01em; color: #F4F1EC; transition: color 0.4s"><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="1" style="display: block; transform: translateY(-1em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.00s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="7" style="display: block; transform: translateY(-7em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.08s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true">:</span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="0" style="display: block; transform: translateY(0em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.16s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="0" style="display: block; transform: translateY(0em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.24s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span></p></div>
+<div class="moz-tltext" style="display: flex; flex-direction: column; gap: 14px; opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s">
+<p style="margin: 0; font-size: 20px; font-weight: 500; color: #F4F1EC">Trabalho de grupo</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C4BFB6">Ainda falta fechar o trabalho, e o grupo começa a dispersar.</p>
+</div>
+</div>
+
+<div class="moz-tlitem" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 14px">
+<div style="position: relative; height: 2px; border-radius: 2px; background: #383630">
+<div class="moz-tlfill" style="height: 2px; border-radius: 2px; width: 100%; background: #F15419; transition: width 0.12s linear"></div>
+<span class="moz-tlmark" aria-hidden="true" style="position: absolute; top: -7px; left: calc(0% - 8px); width: 16px; height: 16px; box-sizing: border-box; border-radius: 50%; border: 3.5px solid #F15419; background: #1B1A17; box-shadow: 0 0 16px rgba(241,84,25,0.65); opacity: 0; transition: left 0.12s linear, opacity 0.25s"></span>
+</div>
+<div style="display: flex; align-items: center; gap: 12px"><span class="moz-tldot" style="flex: 0 0 10px; width: 10px; height: 10px; border-radius: 50%; background: #F15419; transition: background 0.3s"></span><p class="moz-tltime" aria-label="19:00" style="margin: 0; display: flex; font-size: 30px; font-weight: 500; line-height: 1; letter-spacing: -0.01em; color: #F4F1EC; transition: color 0.4s"><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="1" style="display: block; transform: translateY(-1em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.00s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="9" style="display: block; transform: translateY(-9em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.08s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true">:</span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="0" style="display: block; transform: translateY(0em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.16s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="0" style="display: block; transform: translateY(0em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.24s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span></p></div>
+<div class="moz-tltext" style="display: flex; flex-direction: column; gap: 14px; opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s">
+<p style="margin: 0; font-size: 20px; font-weight: 500; color: #F4F1EC">Última revisão</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C4BFB6">A véspera do exame, com as últimas páginas por rever.</p>
+</div>
+</div>
+</div><div class="moz-tl" data-k="trab" style="display:none">
+<div class="moz-tlitem" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 14px">
+<div style="position: relative; height: 2px; border-radius: 2px; background: #383630">
+<div class="moz-tlfill" style="height: 2px; border-radius: 2px; width: 100%; background: #F15419; transition: width 0.12s linear"></div>
+<span class="moz-tlmark" aria-hidden="true" style="position: absolute; top: -7px; left: calc(0% - 8px); width: 16px; height: 16px; box-sizing: border-box; border-radius: 50%; border: 3.5px solid #F15419; background: #1B1A17; box-shadow: 0 0 16px rgba(241,84,25,0.65); opacity: 0; transition: left 0.12s linear, opacity 0.25s"></span>
+</div>
+<div style="display: flex; align-items: center; gap: 12px"><span class="moz-tldot" style="flex: 0 0 10px; width: 10px; height: 10px; border-radius: 50%; background: #F15419; transition: background 0.3s"></span><p class="moz-tltime" aria-label="09:00" style="margin: 0; display: flex; font-size: 30px; font-weight: 500; line-height: 1; letter-spacing: -0.01em; color: #F4F1EC; transition: color 0.4s"><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="0" style="display: block; transform: translateY(0em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.00s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="9" style="display: block; transform: translateY(-9em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.08s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true">:</span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="0" style="display: block; transform: translateY(0em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.16s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="0" style="display: block; transform: translateY(0em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.24s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span></p></div>
+<div class="moz-tltext" style="display: flex; flex-direction: column; gap: 14px; opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s">
+<p style="margin: 0; font-size: 20px; font-weight: 500; color: #F4F1EC">Primeira reunião</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C4BFB6">O dia arranca a correr, antes de teres tempo para te sentar.</p>
+</div>
+</div>
+
+<div class="moz-tlitem" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 14px">
+<div style="position: relative; height: 2px; border-radius: 2px; background: #383630">
+<div class="moz-tlfill" style="height: 2px; border-radius: 2px; width: 100%; background: #F15419; transition: width 0.12s linear"></div>
+<span class="moz-tlmark" aria-hidden="true" style="position: absolute; top: -7px; left: calc(0% - 8px); width: 16px; height: 16px; box-sizing: border-box; border-radius: 50%; border: 3.5px solid #F15419; background: #1B1A17; box-shadow: 0 0 16px rgba(241,84,25,0.65); opacity: 0; transition: left 0.12s linear, opacity 0.25s"></span>
+</div>
+<div style="display: flex; align-items: center; gap: 12px"><span class="moz-tldot" style="flex: 0 0 10px; width: 10px; height: 10px; border-radius: 50%; background: #F15419; transition: background 0.3s"></span><p class="moz-tltime" aria-label="14:30" style="margin: 0; display: flex; font-size: 30px; font-weight: 500; line-height: 1; letter-spacing: -0.01em; color: #F4F1EC; transition: color 0.4s"><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="1" style="display: block; transform: translateY(-1em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.00s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="4" style="display: block; transform: translateY(-4em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.08s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true">:</span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="3" style="display: block; transform: translateY(-3em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.16s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="0" style="display: block; transform: translateY(0em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.24s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span></p></div>
+<div class="moz-tltext" style="display: flex; flex-direction: column; gap: 14px; opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s">
+<p style="margin: 0; font-size: 20px; font-weight: 500; color: #F4F1EC">Pós-almoço</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C4BFB6">A tarde começa devagar, e a lista de tarefas não.</p>
+</div>
+</div>
+
+<div class="moz-tlitem" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 14px">
+<div style="position: relative; height: 2px; border-radius: 2px; background: #383630">
+<div class="moz-tlfill" style="height: 2px; border-radius: 2px; width: 100%; background: #F15419; transition: width 0.12s linear"></div>
+<span class="moz-tlmark" aria-hidden="true" style="position: absolute; top: -7px; left: calc(0% - 8px); width: 16px; height: 16px; box-sizing: border-box; border-radius: 50%; border: 3.5px solid #F15419; background: #1B1A17; box-shadow: 0 0 16px rgba(241,84,25,0.65); opacity: 0; transition: left 0.12s linear, opacity 0.25s"></span>
+</div>
+<div style="display: flex; align-items: center; gap: 12px"><span class="moz-tldot" style="flex: 0 0 10px; width: 10px; height: 10px; border-radius: 50%; background: #F15419; transition: background 0.3s"></span><p class="moz-tltime" aria-label="16:30" style="margin: 0; display: flex; font-size: 30px; font-weight: 500; line-height: 1; letter-spacing: -0.01em; color: #F4F1EC; transition: color 0.4s"><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="1" style="display: block; transform: translateY(-1em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.00s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="6" style="display: block; transform: translateY(-6em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.08s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true">:</span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="3" style="display: block; transform: translateY(-3em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.16s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="0" style="display: block; transform: translateY(0em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.24s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span></p></div>
+<div class="moz-tltext" style="display: flex; flex-direction: column; gap: 14px; opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s">
+<p style="margin: 0; font-size: 20px; font-weight: 500; color: #F4F1EC">Apresentação</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C4BFB6">Os minutos antes de entrar na sala para apresentar.</p>
+</div>
+</div>
+
+<div class="moz-tlitem" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 14px">
+<div style="position: relative; height: 2px; border-radius: 2px; background: #383630">
+<div class="moz-tlfill" style="height: 2px; border-radius: 2px; width: 100%; background: #F15419; transition: width 0.12s linear"></div>
+<span class="moz-tlmark" aria-hidden="true" style="position: absolute; top: -7px; left: calc(0% - 8px); width: 16px; height: 16px; box-sizing: border-box; border-radius: 50%; border: 3.5px solid #F15419; background: #1B1A17; box-shadow: 0 0 16px rgba(241,84,25,0.65); opacity: 0; transition: left 0.12s linear, opacity 0.25s"></span>
+</div>
+<div style="display: flex; align-items: center; gap: 12px"><span class="moz-tldot" style="flex: 0 0 10px; width: 10px; height: 10px; border-radius: 50%; background: #F15419; transition: background 0.3s"></span><p class="moz-tltime" aria-label="18:00" style="margin: 0; display: flex; font-size: 30px; font-weight: 500; line-height: 1; letter-spacing: -0.01em; color: #F4F1EC; transition: color 0.4s"><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="1" style="display: block; transform: translateY(-1em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.00s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="8" style="display: block; transform: translateY(-8em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.08s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true">:</span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="0" style="display: block; transform: translateY(0em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.16s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span><span aria-hidden="true" style="display: inline-block; height: 1em; overflow: hidden"><span class="moz-dig" data-d="0" style="display: block; transform: translateY(0em); transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.24s">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</span></span></p></div>
+<div class="moz-tltext" style="display: flex; flex-direction: column; gap: 14px; opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s">
+<p style="margin: 0; font-size: 20px; font-weight: 500; color: #F4F1EC">Fecho do dia</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C4BFB6">Acabar o que ficou pendente, sem deixar nada a meio.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <p style="margin: 0; font-size: 15px; color: #A39E95">Não é recomendado o consumo de mais de uma lata por dia.</p>
 </div>
@@ -343,14 +415,25 @@ function onScroll(){ if(busy) return; busy=true; requestAnimationFrame(function(
   if(lid) lid.style.transform='perspective(1300px) rotateX('+a+'deg)';
   if(face) face.style.boxShadow='0 '+(30-lift/2)+'px '+(70+lift)+'px rgba(0,0,0,0.45), inset 0 1px 0 #FFFFFF';
   checkMoments(); }); }
-var typed=[].slice.call(document.querySelectorAll('.moz-typed')), carets=[].slice.call(document.querySelectorAll('.moz-tcaret')), armed=false;
-var mom=document.getElementById('momentos');
-if(!reduce&&mom&&mom.getBoundingClientRect().top>window.innerHeight){ armed=true; typed.forEach(function(t){t.textContent='';}); }
-function checkMoments(){ if(!armed||!mom) return;
-  if(mom.getBoundingClientRect().top<window.innerHeight*0.7){ armed=false; var n=0;
-    carets.forEach(function(c){c.style.display='inline-block';});
-    var tm=setInterval(function(){ n+=2; typed.forEach(function(t,i){ var f=t.getAttribute('data-full'); t.textContent=f.slice(0,n); if(n>=f.length) carets[i].style.display='none'; });
-      if(n>=140) clearInterval(tm); },28); } }
+var tlEl=document.getElementById('moz-tl'), tp=1, roll=true;
+function updTL(){ var seg=tp*4, act=Math.min(Math.floor(seg),3);
+  [].forEach.call(document.querySelectorAll('.moz-tl'),function(g){ if(g.style.display==='none') return;
+    [].forEach.call(g.querySelectorAll('.moz-tlitem'),function(it,i){ var lit=seg>i+0.001||tp>=1, f=Math.min(Math.max(seg-i,0),1);
+      it.querySelector('.moz-tlfill').style.width=Math.round(f*100)+'%';
+      var mk=it.querySelector('.moz-tlmark'); mk.style.opacity=i===act?1:0; mk.style.left='calc('+(i===act?Math.round(f*100):0)+'% - 8px)';
+      it.querySelector('.moz-tldot').style.background=lit?'#F15419':'#45423B';
+      it.querySelector('.moz-tltime').style.color=lit?'#F4F1EC':'#6B675F';
+      var tx=it.querySelector('.moz-tltext'); tx.style.opacity=lit?1:0.3; tx.style.transform='translateY('+(lit?0:10)+'px)';
+      [].forEach.call(it.querySelectorAll('.moz-dig'),function(d){ d.style.transform='translateY('+((lit&&roll)?-parseInt(d.getAttribute('data-d'),10):0)+'em)'; });
+    }); }); }
+function checkMoments(){ if(!tlEl) return; var vh=window.innerHeight||800, r=tlEl.getBoundingClientRect(), p=(vh*0.82-r.top)/Math.max(vh*0.5,r.height-vh*0.2);
+  if(reduce) p=1; p=Math.round(Math.min(Math.max(p,0),1)*200)/200; if(p!==tp){ tp=p; updTL(); } }
+function pick(k){ ['est','trab'].forEach(function(x){ var b=document.getElementById('moz-tab-'+x), on=x===k;
+    b.setAttribute('aria-selected',on?'true':'false'); b.style.background=on?'#F4F1EC':'transparent'; b.style.color=on?'#1B1A17':'#D2CDC4'; b.style.borderColor=on?'#F4F1EC':'#45423B'; });
+  [].forEach.call(document.querySelectorAll('.moz-tl'),function(g){ g.style.display=g.getAttribute('data-k')===k?'contents':'none'; });
+  roll=false; updTL(); setTimeout(function(){ roll=true; updTL(); },60); }
+['est','trab'].forEach(function(x){ var b=document.getElementById('moz-tab-'+x); if(b) b.addEventListener('click',function(){pick(x);}); });
+tp=-1; checkMoments();
 window.addEventListener('scroll',onScroll,{passive:true});
 var sig=['Relês o mesmo parágrafo.','O telemóvel aparece na mão sem dares por isso.','O ritmo abranda a meio da tarde.','Mais um café já não apetece.','A lista de tarefas continua igual.'];
 var sEl=document.getElementById('moz-sig'), bar=document.getElementById('moz-sigbar'), g={i:0,c:0,dir:1,hold:0};
